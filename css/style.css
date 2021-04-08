@@ -1181,10 +1181,6 @@ footer a {
         display: none;
     }
 
-    .btn_hamburger_m.active {
-/*        top: 30px;*/
-    }
-
     .btn_hamburger_m.active > span {
         background-color: white;
     }
