@@ -1,859 +1,1285 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <!--iPhone에서 임의로 아이콘을 설정하여 변경하는것을 방지하는 meta tag-->
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no" />
     <!--링크시 보여질 이미지와 제목 설정하는 meta tag-->
-    <meta property="og:image" content="images/link.jpg">
-    <meta property="og:title" content="nature republic">
-    
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta property="og:image" content="images/link.jpg" />
+    <meta property="og:title" content="nature republic" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <title>Nature Republic</title>
     <!--font-->
     <!--font_weight:3,4,7,8-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
     <!--font_weight:1,3,4,5,7,9-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--css-->
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <!--js-->
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/nature_republic.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!--skip-->
     <div class="skip">
-        <ul>
-            <li><a href="#nav">메인메뉴 바로가기</a></li>
-            <li><a href="#container">본문 바로가기</a></li>
-        </ul>
+      <ul>
+        <li><a href="#nav">메인메뉴 바로가기</a></li>
+        <li><a href="#container">본문 바로가기</a></li>
+      </ul>
     </div>
 
     <!--header-->
     <div class="bg_m"></div>
     <header>
-        <!--hTop-->
-        <div class="hTop">
-            <a href="#void">
-                <div class="btn_hamburger_m">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+      <!--hTop-->
+      <div class="hTop">
+        <a href="#void">
+          <div class="btn_hamburger_m">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <h1 class="logo"><a href="#void">NATURE REPUBLIC</a></h1>
+        <div class="search_box_m">
+          <a href="#void" class="icon-magnifier"></a>
+        </div>
+      </div>
+
+      <!--hBot-->
+      <div class="hBot">
+        <nav>
+          <div id="nav" class="center clearFix">
+            <!--전체 카테고리-->
+            <div class="category">
+              <a href="#void">
+                <div class="btn_hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-            </a>
-            <h1 class="logo"><a href="#void">NATURE REPUBLIC</a></h1>
-            <div class="search_box_m">
+                <strong>전체 카테고리</strong>
+              </a>
+
+              <ul class="depth_01">
+                <li>
+                  <a href="#void">스킨케어</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">스킨 / 미스트</a></li>
+                    <li><a href="#void">로션</a></li>
+                    <li><a href="#void">에센스 / 앰플 / 세럼</a></li>
+                    <li><a href="#void">크림</a></li>
+                    <li><a href="#void">아이크림</a></li>
+                    <li><a href="#void">베이비</a></li>
+                    <li><a href="#void">한방</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">클렌징</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">클렌징폼</a></li>
+                    <li><a href="#void">클렌징워터 / 오일</a></li>
+                    <li><a href="#void">클렌징크림</a></li>
+                    <li><a href="#void">클렌징젤 / 필링</a></li>
+                    <li><a href="#void">클렌징티슈 / 비누</a></li>
+                    <li><a href="#void">클렌징기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">팩 &amp; 마스크</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">마스크시트</a></li>
+                    <li><a href="#void">부분마스크시트</a></li>
+                    <li><a href="#void">워시오 프 / 필오프팩</a></li>
+                    <li><a href="#void">슬리핑팩</a></li>
+                    <li><a href="#void">마사지</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">베이스 메이크업</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">베이스 / 프라이머</a></li>
+                    <li><a href="#void">파운데이션 / 컨실러</a></li>
+                    <li><a href="#void">CC / BB</a></li>
+                    <li><a href="#void">파우더 / 팩트 / 쿠션</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">포인트 메이크업</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">블러셔 / 하이라이터</a></li>
+                    <li><a href="#void">아이섀도우</a></li>
+                    <li><a href="#void">마스카라</a></li>
+                    <li><a href="#void">아이라이너</a></li>
+                    <li><a href="#void">아이브로우</a></li>
+                    <li><a href="#void">립밤 / 틴트</a></li>
+                    <li><a href="#void">립스틱 / 립라이너</a></li>
+                    <li><a href="#void">립글로스</a></li>
+                    <li><a href="#void">네일</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">선케어</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">선크림 / 젤</a></li>
+                    <li><a href="#void">선스프레이 / 퍼프</a></li>
+                    <li><a href="#void">기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">바디 &amp; 헤어</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">바디클렌저</a></li>
+                    <li><a href="#void">바디로션 / 크림 / 미스트</a></li>
+                    <li><a href="#void">바디오일 / 스크럽</a></li>
+                    <li><a href="#void">향수 / 방향 / 디퓨저</a></li>
+                    <li><a href="#void">핸드 / 풋케어</a></li>
+                    <li><a href="#void">데오드란트 / 제모</a></li>
+                    <li><a href="#void">바디기타</a></li>
+                    <li><a href="#void">샴푸 / 린스</a></li>
+                    <li><a href="#void">헤어팩 / 에센스</a></li>
+                    <li><a href="#void">스타일링</a></li>
+                    <li><a href="#void">헤어컬러링</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">남성</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">스킨 / 로션</a></li>
+                    <li><a href="#void">크림 / 에센스 / 아이</a></li>
+                    <li><a href="#void">클렌저 / 쉐이빙</a></li>
+                    <li><a href="#void">선케어 / BB</a></li>
+                    <li><a href="#void">기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">화장소품</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">퍼프</a></li>
+                    <li><a href="#void">브러쉬</a></li>
+                    <li><a href="#void">화장솜 / 면봉</a></li>
+                    <li><a href="#void">클렌징 소품</a></li>
+                    <li><a href="#void">메이크업 소품</a></li>
+                    <li><a href="#void">네일 소품</a></li>
+                    <li><a href="#void">기타 소품</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">기획세트</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">색조세트</a></li>
+                    <li><a href="#void">기초세트</a></li>
+                    <li><a href="#void">바디세트</a></li>
+                    <li><a href="#void">옴므세트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#void">네리아울렛</a>
+                  <ul class="depth_02">
+                    <li><a href="#void">기초/마스크</a></li>
+                    <li><a href="#void">색조</a></li>
+                    <li><a href="#void">SUN</a></li>
+                    <li><a href="#void">바디 / 클렌징</a></li>
+                    <li><a href="#void">기타</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!--quick_menu-->
+            <ul class="quick_menu">
+              <li><a href="#void">BRAND</a></li>
+              <li><a href="#void">커뮤니티</a></li>
+              <li><a href="#void">쇼핑</a></li>
+              <li><a href="#void">뷰티셀럽</a></li>
+              <li><a href="#void">이벤트</a></li>
+            </ul>
+
+            <div class="user_area clearFix">
+              <div class="search_box">
                 <a href="#void" class="icon-magnifier"></a>
+                <input type="text" id="search" />
+              </div>
+              <ul class="user_gnb">
+                <li class="user_page">
+                  <a href="#void"></a>
+                </li>
+                <li><a href="#void"></a></li>
+              </ul>
+              <ul class="user_gnb_m">
+                <li><a href="#void">로그인</a></li>
+                <li><a href="#void">회원가입</a></li>
+              </ul>
             </div>
-        </div>
-
-        <!--hBot-->
-        <div class="hBot">
-            <nav>
-            <div id="nav" class="center clearFix">
-                <!--전체 카테고리-->
-                <div class="category">
-                    <a href="#void">
-                        <div class="btn_hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <strong>전체 카테고리</strong>
-                    </a>
-
-                    <ul class="depth_01">
-                        <li>
-                            <a href="#void">스킨케어</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">스킨 / 미스트</a></li>
-                                <li><a href="#void">로션</a></li>
-                                <li><a href="#void">에센스 / 앰플 / 세럼</a></li>
-                                <li><a href="#void">크림</a></li>
-                                <li><a href="#void">아이크림</a></li>
-                                <li><a href="#void">베이비</a></li>
-                                <li><a href="#void">한방</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">클렌징</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">클렌징폼</a></li>
-                                <li><a href="#void">클렌징워터 / 오일</a></li>
-                                <li><a href="#void">클렌징크림</a></li>
-                                <li><a href="#void">클렌징젤 / 필링</a></li>
-                                <li><a href="#void">클렌징티슈 / 비누</a></li>
-                                <li><a href="#void">클렌징기타</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">팩 &amp; 마스크</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">마스크시트</a></li>
-                                <li><a href="#void">부분마스크시트</a></li>
-                                <li><a href="#void">워시오 프 / 필오프팩</a></li>
-                                <li><a href="#void">슬리핑팩</a></li>
-                                <li><a href="#void">마사지</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">베이스 메이크업</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">베이스 / 프라이머</a></li>
-                                <li><a href="#void">파운데이션 / 컨실러</a></li>
-                                <li><a href="#void">CC / BB</a></li>
-                                <li><a href="#void">파우더 / 팩트 / 쿠션</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">포인트 메이크업</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">블러셔 / 하이라이터</a></li>
-                                <li><a href="#void">아이섀도우</a></li>
-                                <li><a href="#void">마스카라</a></li>
-                                <li><a href="#void">아이라이너</a></li>
-                                <li><a href="#void">아이브로우</a></li>
-                                <li><a href="#void">립밤 / 틴트</a></li>
-                                <li><a href="#void">립스틱 / 립라이너</a></li>
-                                <li><a href="#void">립글로스</a></li>
-                                <li><a href="#void">네일</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">선케어</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">선크림 / 젤</a></li>
-                                <li><a href="#void">선스프레이 / 퍼프</a></li>
-                                <li><a href="#void">기타</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">바디 &amp; 헤어</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">바디클렌저</a></li>
-                                <li><a href="#void">바디로션 / 크림 / 미스트</a></li>
-                                <li><a href="#void">바디오일 / 스크럽</a></li>
-                                <li><a href="#void">향수 / 방향 / 디퓨저</a></li>
-                                <li><a href="#void">핸드 / 풋케어</a></li>
-                                <li><a href="#void">데오드란트 / 제모</a></li>
-                                <li><a href="#void">바디기타</a></li>
-                                <li><a href="#void">샴푸 / 린스</a></li>
-                                <li><a href="#void">헤어팩 / 에센스</a></li>
-                                <li><a href="#void">스타일링</a></li>
-                                <li><a href="#void">헤어컬러링</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">남성</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">스킨 / 로션</a></li>
-                                <li><a href="#void">크림 / 에센스 / 아이</a></li>
-                                <li><a href="#void">클렌저 / 쉐이빙</a></li>
-                                <li><a href="#void">선케어 / BB</a></li>
-                                <li><a href="#void">기타</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">화장소품</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">퍼프</a></li>
-                                <li><a href="#void">브러쉬</a></li>
-                                <li><a href="#void">화장솜 / 면봉</a></li>
-                                <li><a href="#void">클렌징 소품</a></li>
-                                <li><a href="#void">메이크업 소품</a></li>
-                                <li><a href="#void">네일 소품</a></li>
-                                <li><a href="#void">기타 소품</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">기획세트</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">색조세트</a></li>
-                                <li><a href="#void">기초세트</a></li>
-                                <li><a href="#void">바디세트</a></li>
-                                <li><a href="#void">옴므세트</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">네리아울렛</a>
-                            <ul class="depth_02">
-                                <li><a href="#void">기초/마스크</a></li>
-                                <li><a href="#void">색조</a></li>
-                                <li><a href="#void">SUN</a></li>
-                                <li><a href="#void">바디 / 클렌징</a></li>
-                                <li><a href="#void">기타</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <!--quick_menu-->
-                <ul class="quick_menu">
-                    <li><a href="#void">BRAND</a></li>
-                    <li><a href="#void">커뮤니티</a></li>
-                    <li><a href="#void">쇼핑</a></li>
-                    <li><a href="#void">뷰티셀럽</a></li>
-                    <li><a href="#void">이벤트</a></li>
-                </ul>
-
-                <div class="user_area clearFix">
-                    <div class="search_box">
-                        <a href="#void" class="icon-magnifier"></a>
-                        <input type="text" id="search">
-                    </div>
-                    <ul class="user_gnb">
-                        <li class="user_page">
-                            <a href="#void"></a>
-                            
-                        </li>
-                        <li><a href="#void"></a></li>
-                    </ul>
-                    <ul class="user_gnb_m">
-                        <li><a href="#void">로그인</a></li>
-                        <li><a href="#void">회원가입</a></li>
-                    </ul>
-                </div>
-            </div>
-            </nav>
-        </div>
-        <!--hBot_shadow-->
-        <div class="hShadow"></div>
+          </div>
+        </nav>
+      </div>
+      <!--hBot_shadow-->
+      <div class="hShadow"></div>
     </header>
-    <hr>
+    <hr />
 
     <!--container-->
     <section id="container">
-        <h2 class="blind">main_banner, new&amp;best, category, event, review</h2>
-        <!--visual-->
-        <div class="visual center">
-            
-            <div class="banner_main_border">
-                <div class="banner_main_wrap">
-                    <ul class="banner_main clearFix">
-                        <li><a href="#void"><img src="images/banner_01.jpg" alt="banner_01"></a></li>
-                        <li><a href="#void"><img src="images/banner_02.jpg" alt="banner_02"></a></li>
-                        <li><a href="#void"><img src="images/banner_03.jpg" alt="banner_03"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <ul class="ctrl">
-                <li class="prev"><a href="#void"></a></li>
-                <li class="next"><a href="#void"></a></li>
+      <h2 class="blind">main_banner, new&amp;best, category, event, review</h2>
+      <!--visual-->
+      <div class="visual center">
+        <div class="banner_main_border">
+          <div class="banner_main_wrap">
+            <ul class="banner_main clearFix">
+              <li>
+                <a href="#void"
+                  ><img src="images/banner_01.jpg" alt="banner_01"
+                /></a>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img src="images/banner_02.jpg" alt="banner_02"
+                /></a>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img src="images/banner_03.jpg" alt="banner_03"
+                /></a>
+              </li>
             </ul>
-            <ul class="circle">
-                <li class="active"><a href="#void"></a></li>
-                <li><a href="#void"></a></li>
-                <li><a href="#void"></a></li>
-            </ul>
+          </div>
         </div>
+        <ul class="ctrl">
+          <li class="prev"><a href="#void"></a></li>
+          <li class="next"><a href="#void"></a></li>
+        </ul>
+        <ul class="circle">
+          <li class="active"><a href="#void"></a></li>
+          <li><a href="#void"></a></li>
+          <li><a href="#void"></a></li>
+        </ul>
+      </div>
 
-        <!--new_best-->
-        <section class="new_best center">
+      <!--new_best-->
+      <section class="new_best center">
+        <h3 class="title"><a href="#void">신제품 &amp; 베스트셀러</a></h3>
+        <div class="list_new_border">
+          <div class="list_new_wrap">
+            <ul class="list_new clearFix">
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list01.jpg"
+                    alt="네이처 3중구조 건강마스크 1BOX(50매)"
+                /></a>
 
-            <h3 class="title"><a href="#void">신제품 &amp; 베스트셀러</a></h3>
-            <div class="list_new_border">
-                <div class="list_new_wrap">
-                    <!--ul.list_new>li*6>(a[href="#void"]>img)+(div.info>p.product+(div.price>span.dp+span.cp)+(p.cart>a[href="#void"]>i+span{장바구니})+(p.wish>a[href="#void"]>i+span{위시리스트}))-->
-                    <ul class="list_new clearFix">
-                        <li>
-                            <a href="#void"><img src="images/new_list01.jpg" alt="네이처 3중구조 건강마스크 1BOX(50매)"></a>
-
-                            <div class="label">
-                                <span class="new">NEW</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">네이처 3중구조 건강마스크 1BOX(50매)</p>
-                                <div class="price"><span class="cp">￦9,900</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/new_list02.jpg" alt="히알론 액티브 10 폼 클렌저"></a>
-
-                            <div class="label">
-                                <span class="new">NEW</span>
-                                <span class="dis">50%</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">히알론 액티브 10 폼 클렌저</p>
-                                <div class="price"><span class="dp">15,400</span><span class="cp">￦7,700</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/new_list03.jpg" alt="블랙빈 안티 헤어로스 샴푸 (체험분 3매 증정)"></a>
-
-                            <div class="label">
-                                <span class="best">BEST</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">블랙빈 안티 헤어로스 샴푸 (체험분 3매 증정)</p>
-                                <div class="price"><span class="dp"></span><span class="cp">￦9,900</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/new_list04.jpg" alt="그린더마 마일드 시카 빅선쿠션 SPF50+PA++++"></a>
-
-                            <div class="label">
-                                <span class="new">NEW</span>
-                                <span class="dis">50%</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">그린더마 마일드 시카 빅선쿠션 SPF50+PA++++</p>
-                                <div class="price"><span class="dp">25,900</span><span class="cp">￦12,900</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/new_list05.jpg" alt="캘리포니아 알로에 점보 선로션 SPF50+ PA++++"></a>
-
-                            <div class="label">
-                                <span class="dis">50%</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">캘리포니아 알로에 점보 선로션 SPF50+ PA++++</p>
-                                <div class="price"><span class="dp">18,900</span><span class="cp">￦13,900</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/new_list06.jpg" alt="[1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++"></a>
-
-                            <div class="label">
-                                <span class="new">NEW</span>
-                            </div>
-
-                            <div class="info">
-                                <p class="product">[1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++</p>
-                                <div class="price"><span class="cp">￦19,900</span></div>
-                                <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="label">
+                  <span class="new">NEW</span>
                 </div>
-            </div>
-            <ul class="ctrl">
-                <li class="prev"><a href="#void"></a></li>
-                <li class="next"><a href="#void"></a></li>
+
+                <div class="info">
+                  <p class="product">네이처 3중구조 건강마스크 1BOX(50매)</p>
+                  <div class="price"><span class="cp">￦9,900</span></div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list02.jpg"
+                    alt="히알론 액티브 10 폼 클렌저"
+                /></a>
+
+                <div class="label">
+                  <span class="new">NEW</span>
+                  <span class="dis">50%</span>
+                </div>
+
+                <div class="info">
+                  <p class="product">히알론 액티브 10 폼 클렌저</p>
+                  <div class="price">
+                    <span class="dp">15,400</span
+                    ><span class="cp">￦7,700</span>
+                  </div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list03.jpg"
+                    alt="블랙빈 안티 헤어로스 샴푸 (체험분 3매 증정)"
+                /></a>
+
+                <div class="label">
+                  <span class="best">BEST</span>
+                </div>
+
+                <div class="info">
+                  <p class="product">
+                    블랙빈 안티 헤어로스 샴푸 (체험분 3매 증정)
+                  </p>
+                  <div class="price">
+                    <span class="dp"></span><span class="cp">￦9,900</span>
+                  </div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list04.jpg"
+                    alt="그린더마 마일드 시카 빅선쿠션 SPF50+PA++++"
+                /></a>
+
+                <div class="label">
+                  <span class="new">NEW</span>
+                  <span class="dis">50%</span>
+                </div>
+
+                <div class="info">
+                  <p class="product">
+                    그린더마 마일드 시카 빅선쿠션 SPF50+PA++++
+                  </p>
+                  <div class="price">
+                    <span class="dp">25,900</span
+                    ><span class="cp">￦12,900</span>
+                  </div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list05.jpg"
+                    alt="캘리포니아 알로에 점보 선로션 SPF50+ PA++++"
+                /></a>
+
+                <div class="label">
+                  <span class="dis">50%</span>
+                </div>
+
+                <div class="info">
+                  <p class="product">
+                    캘리포니아 알로에 점보 선로션 SPF50+ PA++++
+                  </p>
+                  <div class="price">
+                    <span class="dp">18,900</span
+                    ><span class="cp">￦13,900</span>
+                  </div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/new_list06.jpg"
+                    alt="[1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++"
+                /></a>
+
+                <div class="label">
+                  <span class="new">NEW</span>
+                </div>
+
+                <div class="info">
+                  <p class="product">
+                    [1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++
+                  </p>
+                  <div class="price"><span class="cp">￦19,900</span></div>
+                  <p class="cart">
+                    <a href="#void"
+                      ><i class="icon-buy"></i><span>장바구니</span></a
+                    >
+                  </p>
+                  <p class="wish">
+                    <a href="#void"
+                      ><i class="icon-wish"></i><span>위시리스트</span></a
+                    >
+                  </p>
+                </div>
+              </li>
             </ul>
-        </section>
+          </div>
+        </div>
+        <ul class="ctrl">
+          <li class="prev"><a href="#void"></a></li>
+          <li class="next"><a href="#void"></a></li>
+        </ul>
+      </section>
 
-        <!--category-->
-        <section class="category_main">
-            <div class="center">
-                <h3 class="title"><a href="#void">추천 카테고리</a></h3>
-                <div class="list_category_wrap">
-                    <ul class="list_category clearFix">
-                        <!--                li*5>a[href="#void"]+ul.list_sub>li*4>(a[href="#void"]>img)+span.new+span.dis+span.best+(div.info>p.product+(div.price>span.dp+span.cp)+(p.cart>a[href="#void"]>i+span{장바구니})+(p.wish>a[href="#void"]>i+span{위시리스트}))-->
-                        <li class="active">
-                            <a href="#void" class="active">SUN</a>
-                            <ul class="list_sub clearFix">
-                                <li>
-                                    <a href="#void"><img src="images/sun_01.jpg" alt="캘리포니아 알로에 보송 선블럭 SPF50+ PA++++"></a>
+      <!--category-->
+      <section class="category_main">
+        <div class="center">
+          <h3 class="title"><a href="#void">추천 카테고리</a></h3>
+          <div class="list_category_wrap">
+            <ul class="list_category clearFix">
+              <!--                li*5>a[href="#void"]+ul.list_sub>li*4>(a[href="#void"]>img)+span.new+span.dis+span.best+(div.info>p.product+(div.price>span.dp+span.cp)+(p.cart>a[href="#void"]>i+span{장바구니})+(p.wish>a[href="#void"]>i+span{위시리스트}))-->
+              <li class="active">
+                <a href="#void" class="active">SUN</a>
+                <ul class="list_sub clearFix">
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/sun_01.jpg"
+                        alt="캘리포니아 알로에 보송 선블럭 SPF50+ PA++++"
+                    /></a>
 
-                                    <div class="label">
-                                        <span class="dis">38%</span>
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">캘리포니아 알로에 보송 선블럭 SPF50+ PA++++</p>
-                                        <div class="price"><span class="dp">15,900</span><span class="cp">￦10,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/sun_02.jpg" alt="캘리포니아 알로에 보송 선스틱"></a>
-                                    <div class="label">
-                                        <span class="dis">50%</span>
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">캘리포니아 알로에 보송 선스틱</p>
-                                        <div class="price"><span class="dp">39,800</span><span class="cp">￦19,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/sun_03.jpg" alt="캘리포니아 알로에 점보 선로션 SPF50+ PA++++"></a>
-
-                                    <div class="label">
-                                        <span class="dis">26%</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">캘리포니아 알로에 점보 선로션 SPF50+ PA++++</p>
-                                        <div class="price"><span class="dp">18,900</span><span class="cp">￦13,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/sun_04.jpg" alt="[1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++"></a>
-
-                                    <div class="info">
-                                        <p class="product">캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++</p>
-                                        <div class="price"><span class="cp">￦19,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">기초</a>
-                            <ul class="list_sub clearFix">
-                                <li>
-                                    <a href="#void"><img src="images/basic_01.jpg" alt="수딩 앤 모이스처 알로에 베라 92% 수딩 젤 (튜브)"></a>
-
-                                    <div class="info">
-                                        <p class="product">수딩 앤 모이스처 알로에 베라 92% 수딩 젤 (튜브)</p>
-                                        <div class="price"><span class="cp">￦4,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/basic_02.jpg" alt="수딩 앤 모이스처 알로에베라 92% 수딩젤"></a>
-
-                                    <div class="label">
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">수딩 앤 모이스처 알로에베라 92% 수딩젤</p>
-                                        <div class="price"><span class="cp">￦4,400</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/basic_03.jpg" alt="슈퍼 아쿠아 맥스 EX 수분크림"></a>
-
-                                    <div class="label">
-                                        <span class="dis">30%</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">슈퍼 아쿠아 맥스 EX 수분크림</p>
-                                        <div class="price"><span class="dp">32,000</span><span class="cp">￦22,400</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/basic_04.jpg" alt="(대용량) 슈퍼 아쿠아 맥스 컴비네이션 수분 크림 [복합성용]"></a>
-
-                                    <div class="label">
-                                        <span class="dis">50%</span>
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">(대용량) 슈퍼 아쿠아 맥스 컴비네이션 수분 크림 [복합성용]</p>
-                                        <div class="price"><span class="dp">31,000</span><span class="cp">￦15,500</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">색조</a>
-                            <ul class="list_sub clearFix">
-                                <li>
-                                    <a href="#void"><img src="images/color_01.jpg" alt="프로터치 멀티 유즈 팔레트 2종 (2종 택1)"></a>
-
-                                    <div class="label">
-                                        <span class="dis">30%</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">프로터치 멀티 유즈 팔레트 2종 (2종 택1)</p>
-                                        <div class="price"><span class="dp">27,000</span><span class="cp">￦18,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/color_02.jpg" alt="모이스트 엔젤 립밤(플럼핑) (2종택1)"></a>
-
-                                    <div class="info">
-                                        <p class="product">모이스트 엔젤 립밤(플럼핑) (2종택1)</p>
-                                        <div class="price"><span class="cp">￦9,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/color_03.jpg" alt="모이스트 엔젤 립밤 (3종택1)"></a>
-
-                                    <div class="info">
-                                        <p class="product">모이스트 엔젤 립밤 (3종택1)</p>
-                                        <div class="price"><span class="cp">￦9,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/color_04.jpg" alt="바이플라워 에어리 코튼 블러셔 (4종택1)"></a>
-
-                                    <div class="info">
-                                        <p class="product">바이플라워 에어리 코튼 블러셔 (4종택1)</p>
-                                        <div class="price"><span class="cp">￦8,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">베이스</a>
-                            <ul class="list_sub clearFix">
-                                <li>
-                                    <a href="#void"><img src="images/base_01.jpg" alt="프로방스 에어 스킨 핏 원데이 래스팅 파운데이션 Y23 웜베이지 SPF30 PA++"></a>
-
-                                    <div class="info">
-                                        <p class="product">프로방스 에어 스킨 핏 원데이 래스팅 파운데이션 Y23 웜베이지 SPF30 PA++</p>
-                                        <div class="price"><span class="cp">￦18,000</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/base_02.jpg" alt="프로방스 스마트 베리어 쿠션 모이스트 (2종 택1)"></a>
-
-                                    <div class="label">
-                                        <span class="dis">36%</span>
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">프로방스 스마트 베리어 쿠션 모이스트 (2종 택1)</p>
-                                        <div class="price"><span class="dp">20,000</span><span class="cp">￦12,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/base_03.jpg" alt="프로방스 에어 스킨 핏 톤업 프라이머 SPF30,PA+++"></a>
-
-                                    <div class="info">
-                                        <p class="product">프로방스 에어 스킨 핏 톤업 프라이머 SPF30,PA+++</p>
-                                        <div class="price"><span class="cp">￦12,000</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/base_04.jpg" alt="보테니컬 오렌지포어 팩트"></a>
-
-                                    <div class="info">
-                                        <p class="product">보테니컬 오렌지포어 팩트</p>
-                                        <div class="price"><span class="cp">￦7,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#void">헤어</a>
-                            <ul class="list_sub clearFix">
-                                <li>
-                                    <a href="#void"><img src="images/hair_01.jpg" alt="블랙빈 안티 헤어로스 트리트먼트"></a>
-
-                                    <div class="info">
-                                        <p class="product">블랙빈 안티 헤어로스 트리트먼트</p>
-                                        <div class="price"><span class="cp">￦13,000</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/hair_02.jpg" alt="아르간 에센셜 딥케어 샴푸 (대용량)"></a>
-
-                                    <div class="label">
-                                        <span class="new">NEW</span>
-                                        <span class="best">BEST</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">아르간 에센셜 딥케어 샴푸 (대용량)</p>
-                                        <div class="price"><span class="cp">￦30,900</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#void"><img src="images/hair_03.jpg" alt="아르간 에센셜 딥케어 샴푸"></a>
-
-                                    <div class="label">
-                                        <span class="new">NEW</span>
-                                    </div>
-
-                                    <div class="info">
-                                        <p class="product">아르간 에센셜 딥케어 샴푸</p>
-                                        <div class="price"><span class="cp">￦12,000</span></div>
-                                        <p class="cart"><a href="#void"><i class="icon-buy"></i><span>장바구니</span></a></p>
-                                        <p class="wish"><a href="#void"><i class="icon-wish"></i><span>위시리스트</span></a></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!--event-->
-        <section class="event center">
-            <h3 class="title"><a href="#void">EVENT</a></h3>
-            <ul class="list_event clearFix">
-                <li>
-                    <a href="#void"><img src="images/event01.jpg" alt="[그린딜] 네리 아울렛"></a>
-                    <div class="textBox">
-                        <p>[그린딜] 네리 아울렛</p>
-                        <span>2020. 05. 14 ~</span>
+                    <div class="label">
+                      <span class="dis">38%</span>
+                      <span class="best">BEST</span>
                     </div>
-                </li>
-                <li>
-                    <a href="#void"><img src="images/event02.jpg" alt="온라인 전용 제품"></a>
-                    <div class="textBox">
-                        <p>온라인 전용 제품</p>
-                        <span>2019. 12. 31 ~</span>
+
+                    <div class="info">
+                      <p class="product">
+                        캘리포니아 알로에 보송 선블럭 SPF50+ PA++++
+                      </p>
+                      <div class="price">
+                        <span class="dp">15,900</span
+                        ><span class="cp">￦10,900</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
                     </div>
-                </li>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/sun_02.jpg"
+                        alt="캘리포니아 알로에 보송 선스틱"
+                    /></a>
+                    <div class="label">
+                      <span class="dis">50%</span>
+                      <span class="best">BEST</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">캘리포니아 알로에 보송 선스틱</p>
+                      <div class="price">
+                        <span class="dp">39,800</span
+                        ><span class="cp">￦19,900</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/sun_03.jpg"
+                        alt="캘리포니아 알로에 점보 선로션 SPF50+ PA++++"
+                    /></a>
+
+                    <div class="label">
+                      <span class="dis">26%</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">
+                        캘리포니아 알로에 점보 선로션 SPF50+ PA++++
+                      </p>
+                      <div class="price">
+                        <span class="dp">18,900</span
+                        ><span class="cp">￦13,900</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/sun_04.jpg"
+                        alt="[1+1] 캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">
+                        캘리포니아 알로에 아이스 퍼프선 SPF50+ PA++++
+                      </p>
+                      <div class="price"><span class="cp">￦19,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#void">기초</a>
+                <ul class="list_sub clearFix">
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/basic_01.jpg"
+                        alt="수딩 앤 모이스처 알로에 베라 92% 수딩 젤 (튜브)"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">
+                        수딩 앤 모이스처 알로에 베라 92% 수딩 젤 (튜브)
+                      </p>
+                      <div class="price"><span class="cp">￦4,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/basic_02.jpg"
+                        alt="수딩 앤 모이스처 알로에베라 92% 수딩젤"
+                    /></a>
+
+                    <div class="label">
+                      <span class="best">BEST</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">
+                        수딩 앤 모이스처 알로에베라 92% 수딩젤
+                      </p>
+                      <div class="price"><span class="cp">￦4,400</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/basic_03.jpg"
+                        alt="슈퍼 아쿠아 맥스 EX 수분크림"
+                    /></a>
+
+                    <div class="label">
+                      <span class="dis">30%</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">슈퍼 아쿠아 맥스 EX 수분크림</p>
+                      <div class="price">
+                        <span class="dp">32,000</span
+                        ><span class="cp">￦22,400</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/basic_04.jpg"
+                        alt="(대용량) 슈퍼 아쿠아 맥스 컴비네이션 수분 크림 [복합성용]"
+                    /></a>
+
+                    <div class="label">
+                      <span class="dis">50%</span>
+                      <span class="best">BEST</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">
+                        (대용량) 슈퍼 아쿠아 맥스 컴비네이션 수분 크림
+                        [복합성용]
+                      </p>
+                      <div class="price">
+                        <span class="dp">31,000</span
+                        ><span class="cp">￦15,500</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#void">색조</a>
+                <ul class="list_sub clearFix">
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/color_01.jpg"
+                        alt="프로터치 멀티 유즈 팔레트 2종 (2종 택1)"
+                    /></a>
+
+                    <div class="label">
+                      <span class="dis">30%</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">
+                        프로터치 멀티 유즈 팔레트 2종 (2종 택1)
+                      </p>
+                      <div class="price">
+                        <span class="dp">27,000</span
+                        ><span class="cp">￦18,900</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/color_02.jpg"
+                        alt="모이스트 엔젤 립밤(플럼핑) (2종택1)"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">모이스트 엔젤 립밤(플럼핑) (2종택1)</p>
+                      <div class="price"><span class="cp">￦9,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/color_03.jpg"
+                        alt="모이스트 엔젤 립밤 (3종택1)"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">모이스트 엔젤 립밤 (3종택1)</p>
+                      <div class="price"><span class="cp">￦9,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/color_04.jpg"
+                        alt="바이플라워 에어리 코튼 블러셔 (4종택1)"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">
+                        바이플라워 에어리 코튼 블러셔 (4종택1)
+                      </p>
+                      <div class="price"><span class="cp">￦8,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#void">베이스</a>
+                <ul class="list_sub clearFix">
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/base_01.jpg"
+                        alt="프로방스 에어 스킨 핏 원데이 래스팅 파운데이션 Y23 웜베이지 SPF30 PA++"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">
+                        프로방스 에어 스킨 핏 원데이 래스팅 파운데이션 Y23
+                        웜베이지 SPF30 PA++
+                      </p>
+                      <div class="price"><span class="cp">￦18,000</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/base_02.jpg"
+                        alt="프로방스 스마트 베리어 쿠션 모이스트 (2종 택1)"
+                    /></a>
+
+                    <div class="label">
+                      <span class="dis">36%</span>
+                      <span class="best">BEST</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">
+                        프로방스 스마트 베리어 쿠션 모이스트 (2종 택1)
+                      </p>
+                      <div class="price">
+                        <span class="dp">20,000</span
+                        ><span class="cp">￦12,900</span>
+                      </div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/base_03.jpg"
+                        alt="프로방스 에어 스킨 핏 톤업 프라이머 SPF30,PA+++"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">
+                        프로방스 에어 스킨 핏 톤업 프라이머 SPF30,PA+++
+                      </p>
+                      <div class="price"><span class="cp">￦12,000</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/base_04.jpg"
+                        alt="보테니컬 오렌지포어 팩트"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">보테니컬 오렌지포어 팩트</p>
+                      <div class="price"><span class="cp">￦7,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#void">헤어</a>
+                <ul class="list_sub clearFix">
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/hair_01.jpg"
+                        alt="블랙빈 안티 헤어로스 트리트먼트"
+                    /></a>
+
+                    <div class="info">
+                      <p class="product">블랙빈 안티 헤어로스 트리트먼트</p>
+                      <div class="price"><span class="cp">￦13,000</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/hair_02.jpg"
+                        alt="아르간 에센셜 딥케어 샴푸 (대용량)"
+                    /></a>
+
+                    <div class="label">
+                      <span class="new">NEW</span>
+                      <span class="best">BEST</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">아르간 에센셜 딥케어 샴푸 (대용량)</p>
+                      <div class="price"><span class="cp">￦30,900</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#void"
+                      ><img
+                        src="images/hair_03.jpg"
+                        alt="아르간 에센셜 딥케어 샴푸"
+                    /></a>
+
+                    <div class="label">
+                      <span class="new">NEW</span>
+                    </div>
+
+                    <div class="info">
+                      <p class="product">아르간 에센셜 딥케어 샴푸</p>
+                      <div class="price"><span class="cp">￦12,000</span></div>
+                      <p class="cart">
+                        <a href="#void"
+                          ><i class="icon-buy"></i><span>장바구니</span></a
+                        >
+                      </p>
+                      <p class="wish">
+                        <a href="#void"
+                          ><i class="icon-wish"></i><span>위시리스트</span></a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
             </ul>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-        <!--best_review-->
-        <section class="review center">
-            <h3 class="title"><a href="#void">Best Review</a></h3>
-            <div class="list_review_border">
-                <div class="list_review_wrap">
-                    <ul class="list_review clearFix">
-                        <li>
-                            <a href="#void"><img src="images/review-01.jpeg" alt="히알론 액티브 10 블루 캡슐 세럼 스페셜 기획세트 + NCT부채"></a>
-                            <div class="ratings_Wrap">
-                                <span>4.0</span>
-                                <ul class="ratings clearFix">
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
-                            </div>
-                            <div class="details_Wrap">
-                                <p class="comment">사계절 쓰기 좋은 촉촉한 세럼이에요!</p>
-                                <p class="details">히알론블루캡슐로 촉촉 탱탱한 피부 만들 수 있는 세럼 너무 좋아서 후기 남기고가요:) 여름용으로 세럼 몇 개 구매해서 써봤는데 너무 묽고 금방 건조해지는게 싫더라구요.. 그래서 촉촉하다는 평을 듣고 블루캡슐세럼 사용해봤어요! 후기 그대로 진짜 속건조 잡아주고 제형이 묽지않고 쫀~쫀해서 사용후에도 당김이 없어서 좋아요ㅠㅠㅠㅠ 진짜 물광피부 연출해줘요!ㅋㅋㅋ 여름용으로 샀던 다른 세럼들 버리러감니다.. 총총</p>
-                                <p class="more"><a href="#void">더보기</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/review-02.jpg" alt="블랙빈 안티 헤어 로스 두피 토닉"></a>
-                            <div class="ratings_Wrap">
-                                <span>4.7</span>
-                                <ul class="ratings">
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
-                            </div>
-                            <div class="details_Wrap">
-                                <p class="comment">제 두피는 여기에 잠시 맡겨야겠어요</p>
-                                <p class="details">두피와 모발 영양 공급에 도움을 주는 검정콩추출물과 블랙 콤플렉스가 함유로 탈모 완화 기능성 토닉!!</p>
-                                <p class="more"><a href="#void">더보기</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/review-03.jpeg" alt="그린더마 티트리시카 토너"></a>
-                            <div class="ratings_Wrap">
-                                <span>4.2</span>
-                                <ul class="ratings">
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
-                            </div>
-                            <div class="details_Wrap">
-                                <p class="comment">너무 보습력이 좋아요!</p>
-                                <p class="details">깨끗하고 당김없고 좋아요~</p>
-                                <p class="more"><a href="#void">더보기</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/review-04.jpeg" alt="그린더마 티트리시카 수딩크림"></a>
-                            <div class="ratings_Wrap">
-                                <span>4.5</span>
-                                <ul class="ratings">
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
-                            </div>
-                            <div class="details_Wrap">
-                                <p class="comment">안끈적거리고 좋아요</p>
-                                <p class="details">아들도 향이 좋다고 잘바르네요~</p>
-                                <p class="more"><a href="#void">더보기</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#void"><img src="images/review-05.jpg" alt="아쿠아 수퍼아쿠아 맥스"></a>
-                            <div class="ratings_Wrap">
-                                <span>4.3</span>
-                                <ul class="ratings">
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
-                            </div>
-                            <div class="details_Wrap">
-                                <p class="comment">믿고 쓰는 아쿠아!</p>
-                                <p class="details">깔끔하고 촉촉해서 좋아요</p>
-                                <p class="more"><a href="#void">더보기</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+      <!--event-->
+      <section class="event center">
+        <h3 class="title"><a href="#void">EVENT</a></h3>
+        <ul class="list_event clearFix">
+          <li>
+            <a href="#void"
+              ><img src="images/event01.jpg" alt="[그린딜] 네리 아울렛"
+            /></a>
+            <div class="textBox">
+              <p>[그린딜] 네리 아울렛</p>
+              <span>2020. 05. 14 ~</span>
             </div>
-            <ul class="ctrl">
-                <li class="prev"><a href="#void"></a></li>
-                <li class="next"><a href="#void"></a></li>
+          </li>
+          <li>
+            <a href="#void"
+              ><img src="images/event02.jpg" alt="온라인 전용 제품"
+            /></a>
+            <div class="textBox">
+              <p>온라인 전용 제품</p>
+              <span>2019. 12. 31 ~</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!--best_review-->
+      <section class="review center">
+        <h3 class="title"><a href="#void">Best Review</a></h3>
+        <div class="list_review_border">
+          <div class="list_review_wrap">
+            <ul class="list_review clearFix">
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/review-01.jpeg"
+                    alt="히알론 액티브 10 블루 캡슐 세럼 스페셜 기획세트 + NCT부채"
+                /></a>
+                <div class="ratings_Wrap">
+                  <span>4.0</span>
+                  <ul class="ratings clearFix">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                  </ul>
+                </div>
+                <div class="details_Wrap">
+                  <p class="comment">사계절 쓰기 좋은 촉촉한 세럼이에요!</p>
+                  <p class="details">
+                    히알론블루캡슐로 촉촉 탱탱한 피부 만들 수 있는 세럼 너무
+                    좋아서 후기 남기고가요:) 여름용으로 세럼 몇 개 구매해서
+                    써봤는데 너무 묽고 금방 건조해지는게 싫더라구요.. 그래서
+                    촉촉하다는 평을 듣고 블루캡슐세럼 사용해봤어요! 후기 그대로
+                    진짜 속건조 잡아주고 제형이 묽지않고 쫀~쫀해서 사용후에도
+                    당김이 없어서 좋아요ㅠㅠㅠㅠ 진짜 물광피부 연출해줘요!ㅋㅋㅋ
+                    여름용으로 샀던 다른 세럼들 버리러감니다.. 총총
+                  </p>
+                  <p class="more"><a href="#void">더보기</a></p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/review-02.jpg"
+                    alt="블랙빈 안티 헤어 로스 두피 토닉"
+                /></a>
+                <div class="ratings_Wrap">
+                  <span>4.7</span>
+                  <ul class="ratings">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                  </ul>
+                </div>
+                <div class="details_Wrap">
+                  <p class="comment">제 두피는 여기에 잠시 맡겨야겠어요</p>
+                  <p class="details">
+                    두피와 모발 영양 공급에 도움을 주는 검정콩추출물과 블랙
+                    콤플렉스가 함유로 탈모 완화 기능성 토닉!!
+                  </p>
+                  <p class="more"><a href="#void">더보기</a></p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/review-03.jpeg"
+                    alt="그린더마 티트리시카 토너"
+                /></a>
+                <div class="ratings_Wrap">
+                  <span>4.2</span>
+                  <ul class="ratings">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                  </ul>
+                </div>
+                <div class="details_Wrap">
+                  <p class="comment">너무 보습력이 좋아요!</p>
+                  <p class="details">깨끗하고 당김없고 좋아요~</p>
+                  <p class="more"><a href="#void">더보기</a></p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img
+                    src="images/review-04.jpeg"
+                    alt="그린더마 티트리시카 수딩크림"
+                /></a>
+                <div class="ratings_Wrap">
+                  <span>4.5</span>
+                  <ul class="ratings">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                  </ul>
+                </div>
+                <div class="details_Wrap">
+                  <p class="comment">안끈적거리고 좋아요</p>
+                  <p class="details">아들도 향이 좋다고 잘바르네요~</p>
+                  <p class="more"><a href="#void">더보기</a></p>
+                </div>
+              </li>
+              <li>
+                <a href="#void"
+                  ><img src="images/review-05.jpg" alt="아쿠아 수퍼아쿠아 맥스"
+                /></a>
+                <div class="ratings_Wrap">
+                  <span>4.3</span>
+                  <ul class="ratings">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                  </ul>
+                </div>
+                <div class="details_Wrap">
+                  <p class="comment">믿고 쓰는 아쿠아!</p>
+                  <p class="details">깔끔하고 촉촉해서 좋아요</p>
+                  <p class="more"><a href="#void">더보기</a></p>
+                </div>
+              </li>
             </ul>
-        </section>
+          </div>
+        </div>
+        <ul class="ctrl">
+          <li class="prev"><a href="#void"></a></li>
+          <li class="next"><a href="#void"></a></li>
+        </ul>
+      </section>
     </section>
-    <hr>
+    <hr />
 
     <!--footer-->
     <footer>
-        <div class="fTop">
-            <div class="center">
-                <ul class="fQuick clearFix">
-                    <li>
-                        <a href="#void">공지사항</a>
-                        <p>[당첨자 발표] 7월 베스트 리뷰 당첨자 발표</p>
-                        <p>[당첨자 발표] 6월 베스트 리뷰 당첨자 발표</p>
-                    </li>
-                    <li>
-                        <a href="#void">소식 / 미디어</a>
-                        <p>[신제품] 고급 건강 마스크 50매를 선물로 드립니다!</p>
-                        <p>[신제품] 네이처리퍼블릭, 티트리와 시카 성분 함유한 트러블 스팟 세럼 출시</p>
-                    </li>
-                    <li>
-                        <a href="#void">멤버십</a>
-                        <p>구매할수록 쌓이는 혜택, 네이처리퍼블릭 멤버십</p>
-                    </li>
-                    <li>
-                        <a href="#void">매장찾기</a>
-                        <p>Natural! Fresh! Delight! 새로운 자연을 만나다.</p>
-                    </li>
-                </ul>
-                <div class="sns">
-                    <p>네이처리퍼블릭 SNS</p>
-                    <ul class="list_sns clearFix">
-                        <li><a href="#void" class="fb"></a></li>
-                        <li><a href="#void" class="insta"></a></li>
-                        <li><a href="#void" class="youtube"></a></li>
-                        <li><a href="#void" class="kakao"></a></li>
-                        <li><a href="#void" class="blog"></a></li>
-                    </ul>
-                </div>
-                <div class="cc">
-                    <p>고객 센터</p>
-                    <div class="cc_hover">
-                        <span>080-890-6000</span>
-                        <span>월~금요일(공휴일 제외) 09:00 ~ 18:00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fBot center">
-            <div class="sns_m">
-                <ul class="list_sns_m clearFix">
-                    <li><a href="#void" class="fb_m"></a></li>
-                    <li><a href="#void" class="insta_m"></a></li>
-                    <li><a href="#void" class="youtube_m"></a></li>
-                    <li><a href="#void" class="kakao_m"></a></li>
-                    <li><a href="#void" class="blog_m"></a></li>
-                </ul>
-            </div>
-            <ul class="fMenu clearFix">
-                <li><a href="#void">이용약관</a></li>
-                <li><a href="#void">개인정보처리방침</a></li>
-                <li><a href="#void">가맹점 문의</a></li>
-                <li><a href="#void">제휴 문의</a></li>
-                <li><a href="#void">신규 입점 문의</a></li>
-                <li><a href="#void">본사 정품 판매처</a></li>
-                <li><a href="#void">채용 안내</a></li>
+      <div class="fTop">
+        <div class="center">
+          <ul class="fQuick clearFix">
+            <li>
+              <a href="#void">공지사항</a>
+              <p>[당첨자 발표] 7월 베스트 리뷰 당첨자 발표</p>
+              <p>[당첨자 발표] 6월 베스트 리뷰 당첨자 발표</p>
+            </li>
+            <li>
+              <a href="#void">소식 / 미디어</a>
+              <p>[신제품] 고급 건강 마스크 50매를 선물로 드립니다!</p>
+              <p>
+                [신제품] 네이처리퍼블릭, 티트리와 시카 성분 함유한 트러블 스팟
+                세럼 출시
+              </p>
+            </li>
+            <li>
+              <a href="#void">멤버십</a>
+              <p>구매할수록 쌓이는 혜택, 네이처리퍼블릭 멤버십</p>
+            </li>
+            <li>
+              <a href="#void">매장찾기</a>
+              <p>Natural! Fresh! Delight! 새로운 자연을 만나다.</p>
+            </li>
+          </ul>
+          <div class="sns">
+            <p>네이처리퍼블릭 SNS</p>
+            <ul class="list_sns clearFix">
+              <li><a href="#void" class="fb"></a></li>
+              <li><a href="#void" class="insta"></a></li>
+              <li><a href="#void" class="youtube"></a></li>
+              <li><a href="#void" class="kakao"></a></li>
+              <li><a href="#void" class="blog"></a></li>
             </ul>
-            <h2 class="fLogo">nature republic</h2>
-            <div class="info_company clearFix">
-                <div class="infoL">
-                    <p>네이처리퍼블릭대표이사 : 정운호주소 : 서울 강남구 테헤란로 534 (대치동, 글라스타워빌딩) 22,23,24층<a href="#void">찾아오시는 길</a></p>
-
-                    <p>사업자등록번호 : 220-87-77410통신판매업 신고번호 : 강남 00622호<a href="#void">사업자 정보 확인</a></p>
-
-                    <p>개인정보관리책임자 : 배윤석 cpo@naturerepublic.com</p>
-                    <address>COPYRIGHTS(C) 2016 NATURE REPUBLIC ALL RIGHTS RESERVED.</address>
-                </div>
-                <div class="infoR clearFix">
-                    <div class="imgBox"><img src="images/img_kcp.png" alt="KCP구매안전(에스크로)서비스"></div>
-                    <div class="textBox">
-                        <p>KCP구매안전(에스크로)서비스</p>
-                        <p>고객님의 안전거래를 위하여 무통장입금 거래에 대해 KCP의 구매안전서비스를 적용하고 있습니다.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="cc">
+            <p>고객 센터</p>
+            <div class="cc_hover">
+              <span>080-890-6000</span>
+              <span>월~금요일(공휴일 제외) 09:00 ~ 18:00</span>
             </div>
-
+          </div>
         </div>
-    </footer>
-    
-    <div class="m_bottom">
-        <ul class="m_nav clearFix">
-            <li><a href="#void"></a></li>
-            <li><a href="#void"></a></li>
-            <li><a href="#void"></a></li>
-            <li><a href="#void"></a></li>
+      </div>
+      <div class="fBot center">
+        <div class="sns_m">
+          <ul class="list_sns_m clearFix">
+            <li><a href="#void" class="fb_m"></a></li>
+            <li><a href="#void" class="insta_m"></a></li>
+            <li><a href="#void" class="youtube_m"></a></li>
+            <li><a href="#void" class="kakao_m"></a></li>
+            <li><a href="#void" class="blog_m"></a></li>
+          </ul>
+        </div>
+        <ul class="fMenu clearFix">
+          <li><a href="#void">이용약관</a></li>
+          <li><a href="#void">개인정보처리방침</a></li>
+          <li><a href="#void">가맹점 문의</a></li>
+          <li><a href="#void">제휴 문의</a></li>
+          <li><a href="#void">신규 입점 문의</a></li>
+          <li><a href="#void">본사 정품 판매처</a></li>
+          <li><a href="#void">채용 안내</a></li>
         </ul>
-    </div>
-</body>
+        <h2 class="fLogo">nature republic</h2>
+        <div class="info_company clearFix">
+          <div class="infoL">
+            <p>
+              네이처리퍼블릭대표이사 : 정운호주소 : 서울 강남구 테헤란로 534
+              (대치동, 글라스타워빌딩) 22,23,24층<a href="#void"
+                >찾아오시는 길</a
+              >
+            </p>
 
+            <p>
+              사업자등록번호 : 220-87-77410통신판매업 신고번호 : 강남 00622호<a
+                href="#void"
+                >사업자 정보 확인</a
+              >
+            </p>
+
+            <p>개인정보관리책임자 : 배윤석 cpo@naturerepublic.com</p>
+            <address>
+              COPYRIGHTS(C) 2016 NATURE REPUBLIC ALL RIGHTS RESERVED.
+            </address>
+          </div>
+          <div class="infoR clearFix">
+            <div class="imgBox">
+              <img src="images/img_kcp.png" alt="KCP구매안전(에스크로)서비스" />
+            </div>
+            <div class="textBox">
+              <p>KCP구매안전(에스크로)서비스</p>
+              <p>
+                고객님의 안전거래를 위하여 무통장입금 거래에 대해 KCP의
+                구매안전서비스를 적용하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="m_bottom">
+      <ul class="m_nav clearFix">
+        <li><a href="#void"></a></li>
+        <li><a href="#void"></a></li>
+        <li><a href="#void"></a></li>
+        <li><a href="#void"></a></li>
+      </ul>
+    </div>
+  </body>
 </html>
