@@ -1,0 +1,24 @@
+{
+  "name": "naturerepublic",
+  "version": "1.0.0",
+  "description": "> 이 포트폴리오는 국비지원교육프로그램 수로기간 중 (해당 포트폴리오의 작업 기간 : 2020-09-10 ~ 2020-10.08) 작업한 포트폴리오로,  \r > Nature Republic 의 메인 홈페이지 전반을 디자인부터 구현까지 작업한 결과물이다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayoung-jeremy/natureRepublic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayoung-jeremy/natureRepublic/issues"
+  },
+  "homepage": "https://github.com/hayoung-jeremy/natureRepublic#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
