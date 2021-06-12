@@ -1,10 +1,10 @@
-("use strict");
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-class ReactRenderer extends React.Component {
-  render() {
-    return <React.Fragment>Hello, I'm React</React.Fragment>;
-  }
-}
-
-let domContainer = document.querySelector("#react_container");
-ReactDOM.render(<ReactRenderer />, domContainer);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("react_container")
+);
