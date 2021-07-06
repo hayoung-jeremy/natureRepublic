@@ -1,6 +1,6 @@
 # portfolio_2 : Nature Republic
 
-check my website here : http://jeremiah91.dothome.co.kr/nature_republic/
+check my website [here](http://jeremiah91.dothome.co.kr/nature_republic/)
 
 ### 개요
 
@@ -33,5 +33,4 @@ check my website here : http://jeremiah91.dothome.co.kr/nature_republic/
 
 ### solutions
 
-- 재사용성이 필요한 부분에 react 부분 적용
-- 코드의 refactoring, 기능에 따른 분류, 하나의 기능만하는 함수 작성
+- 현재 [여기](https://github.com/hayoung-jeremy/nature-republic)에서 create-react-app으로 다시 만들고 있다.
